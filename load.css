@@ -1,3 +1,7 @@
+body{
+	background-color: #f8f8f8;
+	font-family: "Helvetica Neue","Hiragino Sans GB",Helvetica,Arial,sans-serif;
+}
 .zu-top-new{
 	position: fixed;
 	left: 0;
@@ -76,6 +80,10 @@
 }
 
 .new-feed-item-inner{
+	border-radius: 1px;
 	padding: 10px;
 	border: 1px solid #eee;
+	background-color: #fff;
+	/*color: #888;*/
+	font-size: 14px;
 }

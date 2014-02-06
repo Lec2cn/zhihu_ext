@@ -1,4 +1,4 @@
-  
+
   var top_nav = $("div.zu-top");
   var top_nav_profile = $("div.top-nav-profile");
   var top_nav_userinfo = top_nav_profile.children(0);
@@ -38,9 +38,6 @@
   }
 
   $(document).bind("scroll" , function(){
-    console.log("s");
-    $("div.feed-item-inner").removeClass();
     $("div.feed-item-inner").attr("class","new-feed-item-inner");
-    $("div.feed-item div.feed-item").removeClass();
     $("div.feed-item div.feed-item").attr("class",".feed-item");
   });

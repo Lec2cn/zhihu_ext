@@ -36,3 +36,11 @@
       window.location.href = href;
     }
   }
+
+  $(document).bind("scroll" , function(){
+    console.log("s");
+    $("div.feed-item-inner").removeClass();
+    $("div.feed-item-inner").attr("class","new-feed-item-inner");
+    $("div.feed-item div.feed-item").removeClass();
+    $("div.feed-item div.feed-item").attr("class",".feed-item");
+  });

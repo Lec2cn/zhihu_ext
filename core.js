@@ -1,3 +1,10 @@
+  // -----------------------------------------------
+  // 知乎界面改造计划 - By Leckie.
+  // 遵循GPL开源协议
+  // 欢迎大家积极贡献项目
+  // 项目地址: https://github.com/Lec2cn/zhihu_ext
+  // -----------------------------------------------
+
 
   var top_nav = $("div.zu-top");
   var top_nav_profile = $("div.top-nav-profile");
@@ -8,7 +15,6 @@
 
 
   var new_userinfo_data = top_nav_userinfo.children(0);
-  // var user_avatar = $("div.zm-profile-header-avatar-container self").children();
   var new_userinfo = document.createElement("div");
   new_userinfo.setAttribute("class","top-nav-userinfo");
   new_userinfo.id = "ext_top-nav-userinfo";
@@ -18,7 +24,6 @@
   top_nav.removeClass();
   top_nav_profile.removeClass();
   top_logo.removeClass();
-  // timeline_border.removeClass();
   timeline_card.removeClass();
   top_nav_userinfo.remove();
 
@@ -46,16 +51,5 @@
     $("div.feed-item-inner").attr("class","new-feed-item-inner");
     $("div.feed-item div.feed-item").attr("class",".feed-item");
   });
-
-
-  // console.log($("a.toggle-expand"));
-  // $(document).on("click", "a.toggle-expand" , rich_text());
-  
-
-  // function rich_text(){
-  //   return function(){
-  //     console.log("123");
-  //   }
-  // }
 
 

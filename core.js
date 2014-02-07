@@ -3,6 +3,7 @@
   // 遵循GPL开源协议
   // 欢迎大家积极贡献项目
   // 项目地址: https://github.com/Lec2cn/zhihu_ext
+  // SF博客地址: http://blog.segmentfault.com/leckie
   // -----------------------------------------------
 
 

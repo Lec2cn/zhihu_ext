@@ -26,7 +26,7 @@ body{
 
 .top-nav-profile{
 	position: absolute;
-	right: 60px !important;
+	right: 40px !important;
 	top: 0;
 	min-width: 120px;
 	z-index: 10;
@@ -74,6 +74,20 @@ body{
 	top: 8px;
 	text-indent: -9999px;
 }
+.ext-exit-btn{
+	min-width: 60px;
+	height: 45px;
+	font-size: 16px;
+	line-height: 45px;
+	border: 1px solid #fff;
+	margin: -1px;
+	position: absolute;
+	right: 40px;
+	color: #fff;
+	z-index: 20;
+	display: none;
+	text-align: center;
+}
 
 .feed-item{
 	border: none !important;
@@ -87,3 +101,21 @@ body{
 	/*color: #888;*/
 	font-size: 14px;
 }
+
+.top-nav-list{
+	position: absolute;
+	top: 45px;
+	display: block;
+}
+.top-nav-list ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.top-nav-list li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/*float: left;*/
+}
+

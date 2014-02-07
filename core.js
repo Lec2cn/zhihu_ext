@@ -13,6 +13,7 @@
   var top_logo = $("#zh-top-link-logo");
   var timeline_border = $("div.feed-item div.feed-item");
   var timeline_card = $("div.feed-item-inner");
+  var top_nav_list = $("ul.zu-top-nav-ul")[0];
 
 
   var new_userinfo_data = top_nav_userinfo.children(0);
@@ -34,6 +35,10 @@
   timeline_border.attr("class",".feed-item");
   top_logo.attr("class","top-link-logo");
   timeline_card.attr("class","new-feed-item-inner");
+
+   $(top_nav_list).append($("<li class='zu-top-nav-li'><a class='zu-top-nav-link' href='/inbox'>私信</a></li>"));
+   $(top_nav_list).append($("<li class='zu-top-nav-li'><a class='zu-top-nav-link' href='/settings'>设置</a></li>"));
+   $(top_nav_list).append($("<li class='zu-top-nav-li'><a class='zu-top-nav-link' href='/logout'>退出</a></li>"));
 
 
   $(document).on("click", "#ext_top-nav-userinfo" , jumptoself(top_nav_userinfo[0].href));

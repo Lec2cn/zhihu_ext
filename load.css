@@ -118,4 +118,12 @@ body{
 	padding: 0;
 	/*float: left;*/
 }
-
+.zu-top-nav-ul{
+	width: 430px;
+}
+.zu-top-nav-li{
+	width: 52px;
+}
+.zu-top-nav-li:hover{
+	border-bottom: 5px #92C348 solid;
+}

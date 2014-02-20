@@ -38,10 +38,13 @@
 
    $(top_nav_list).append($("<li class='zu-top-nav-li'><a class='zu-top-nav-link' href='/inbox'>私信</a></li>"));
    $(top_nav_list).append($("<li class='zu-top-nav-li'><a class='zu-top-nav-link' href='/settings'>设置</a></li>"));
+   $(top_nav_list).append($("<li class='zu-top-nav-li'><a class='zu-top-nav-link' href='javascript:test()'>夜间</a></li>"));
    $(top_nav_list).append($("<li class='zu-top-nav-li'><a class='zu-top-nav-link' href='/logout'>退出</a></li>"));
+   
 
 
   $(document).on("click", "#ext_top-nav-userinfo" , jumptoself(top_nav_userinfo[0].href));
+
   
   top_nav_profile.append(new_userinfo);
 
@@ -58,4 +61,7 @@
     $("div.feed-item div.feed-item").attr("class",".feed-item");
   });
 
+  function test(){
+    alert("a");
+  }
 

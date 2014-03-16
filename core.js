@@ -6,7 +6,13 @@
   // SF博客地址: http://blog.segmentfault.com/leckie
   // -----------------------------------------------
 
+  // -----------------------------------------------
+  // 更新日志
+  // 2014-03-16 增加[隐藏已赞答案]功能
+  // -----------------------------------------------
 
+
+  // Main
   var top_nav = $("div.zu-top");
   var top_nav_profile = $("div.top-nav-profile");
   var top_nav_userinfo = top_nav_profile.children(0);
@@ -14,6 +20,27 @@
   var timeline_border = $("div.feed-item div.feed-item");
   var timeline_card = $("div.feed-item-inner");
   var top_nav_list = $("ul.zu-top-nav-ul")[0];
+
+  // Question Page
+  var question_ans_title = $("div.zh-answers-title").children(0);
+  var sort_by_nolike = document.createElement("div");
+  sort_by_nolike.setAttribute("class","answers-sorter-new");
+  sort_by_nolike.id = "ext_sort_nolike";
+  sort_by_nolike.innerHTML = '隐藏已赞同答案 <i class="zg-icon zg-icon-sidenav-publicedit"></i>';
+  $(question_ans_title).append(sort_by_nolike);
+  $(document).on("click", "#ext_sort_nolike" , hide_like_answer());
+
+  function hide_like_answer(){
+    return function(){
+      $(this).attr("style","background-color: #086ed5;color: #fff;");
+      $("div.zm-item-answer").each(function(){
+        // console.log($(this).find(".pressed"));
+        if($(this).find(".pressed").length == 1){
+            $(this).remove();
+        }
+      });
+    }
+  }
 
 
   var new_userinfo_data = top_nav_userinfo.children(0);
